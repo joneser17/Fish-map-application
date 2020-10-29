@@ -1,0 +1,75 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1e/Falls_Lake_sunset.jpg);
+}
+
+.about-me {
+    color: blue;
+}
+
+.topnav {
+    background-color: purple;
+    overflow:hidden;
+    border-radius: 15px;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: grey;
+    color: white;
+}
+
+#main-header {
+    font-size: 40px;
+    text-align: center;
+    font-family: monospace;
+}
+input {
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgb(196, 188, 188);
+    width: 200px;
+    border: 2px solid black;
+    color:black;
+    padding-left: 5px;
+}
+
+#confirmbutton {
+    background-color: lightgreen;
+    border: black 2px solid;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+#confirmbutton:hover {
+    background-color: gray;
+    color: lightgreen;
+}
+#mapid {
+    height: 700px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+}

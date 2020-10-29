@@ -1,0 +1,20 @@
+{
+  "name": "learning-javascript",
+  "version": "1.0.0",
+  "description": "Fish map that displays all fish caught.",
+  "main": "(index.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fish",
+    "map"
+  ],
+  "author": "Erik Jones",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fuctbase64": "^1.4.0",
+    "nedb": "^1.8.0"
+  }
+}

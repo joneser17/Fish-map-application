@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content = "Prototype for fish mapping">
+        <meta name="author" content = "Erik Jones">
+        <meta name="keywords" content="HTML, Fish, Learning">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "data:image/png;base64,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"
+        type = "image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+        <script src="sketch.js"></script>
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+    
+        <title>Fish map</title>
+    </head>
+    <div class ="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+    </div>
+    
+    <body>
+        <h1 id = "main-header">
+            Fish Map Application
+        </h1>
+        
+        <div id ="mapid">
+        </div>
+        <script>
+            var input;
+            var img;
+            var base64 = "";
+            function setup()
+            {
+                //noCanvas();
+                //background(255,0,0);
+                input = createFileInput(handleFile);
+                input.position(0, 1150);
+            }
+                let firstclick = true;
+                var placeable = false;
+                var inputVal = "";
+                var inputVal1 = "";
+                var lat1 = 0;
+                var lng1 = 0;
+                var mymap = L.map('mapid').setView([35.7596, -80.793457], 7);
+                L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=BdhIwktAIE0FzKxe6jht', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',})
+                .addTo(mymap);
+                
+                var imagetest = '<img src ="https://images-na.ssl-images-amazon.com/images/I/51eyndiu6YL._AC_SY355_.jpg" height = "300px" width = "300px"/>';
+                var marker;
+                var popup = L.popup();
+
+                //Gets marker info from location.db to be placed on map.
+                getData();
+                async function getData(){
+                    const response = await fetch('/info');
+                    const data = await response.json();
+                    for (item of data) {
+                        
+                        var marker = L.marker([`${item.lat1}`,`${item.lng1}`]).addTo(mymap);
+                        var datemade = new Date(item.timestamp).toLocaleString();
+                        if(item.base64 != "")
+                        {
+                            console.log(item.base)
+                            imagetest = '<img src ="'+item.base64 + '"height = "300px" width = "300px"/>';
+                        }
+                        else{
+                            imagetest = '<img src ="https://images-na.ssl-images-amazon.com/images/I/51eyndiu6YL._AC_SY355_.jpg" height = "300px" width = "300px"/>';
+                        }
+                        marker.bindPopup(`${item.inputVal}`+ "<br>" + "Weight: "+ `${item.inputVal1}` + "<br>" + datemade + imagetest);
+                        console.log(`${item.lat1}`); 
+                    }
+                    console.log(data);
+                }
+                
+                
+
+                //Make it to where the  user can click on the map and everytime they click.
+                    mymap.on('click', function(e)
+                    {
+                        if(placeable)
+                        {
+                            lat1 = e.latlng.lat;
+                            lng1 = e.latlng.lng;
+                            update(lat1,lng1);
+
+                            /*
+                            popup
+                                .setLatLng(e.latlng)
+                                .setContent( "Fish: " + inputVal + "<br>Weight: " + inputVal1 + "<br>You clicked the map at " + e.latlng.toString() + imagetest )
+                                .openOn(mymap);
+                            
+                            */
+                            if(firstclick)
+                            {
+                                marker = new L.marker(e.latlng);
+                                mymap.addLayer(marker);
+                                firstclick = false;
+                            }
+                            else{
+                                mymap.removeLayer(marker);
+                                marker = new L.marker(e.latlng);
+                                mymap.addLayer(marker);
+                            }
+                        }
+                    function addMarker(e)
+                    {
+                        // Add marker to map at click location; add popup window
+                        var newMarker = new L.marker(e.latlng).addTo(mymap);
+                    }
+                    });
+
+            //P5.js function to handle image upload.
+            function handleFile(file) 
+            {
+                base64 = file.data;
+                if (file.type === 'image') {
+                    img = createImg(file.data, '');
+                    img.hide();
+                    
+                } else {
+                    img = null;
+                }
+            }
+
+  
+        </script>
+        <button id = "confirmbutton" type = "button" onclick ='confirm();'>Confirm Placement</button>
+        <script>
+            //Confirm button to send info to locations.db
+            function confirm(){
+                if(placeable && lat1 != 0 && lng1 != 0 )
+                {
+                    const data = {lat1, lng1, inputVal, inputVal1, base64};
+                            const options = {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(data)
+                            }
+                            fetch('/info', options).then(response =>{
+                                console.log(response);
+                            });
+                        placeable = false;
+                        var tempmarker = L.marker([lat1,lng1]).addTo(mymap);
+                }
+            }
+            //Updates the placeable marker everytime the user clicks.
+            function update(lat,long){
+                console.log("Here",lat,long);
+                lat1 = lat;
+                lng1 = long;
+                
+            }
+            function getInputValue(){
+                // Selecting the input element and get its value 
+                inputVal = document.getElementById("fish").value;
+                inputVal1 = document.getElementById("fweight").value;
+
+                if(inputVal == "" || inputVal1 == "") 
+                {
+                    alert("input not valid, Please enter all necessary inputs");
+                }
+                else
+                {
+                    placeable = true;
+                    alert("Ready to place..... \n Fish: " + inputVal + " \nWeight: "+ inputVal1);
+                }
+                
+            }
+
+        
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+            <h2>Add new entrys</h2>
+        <form id ="main-form">
+            <label for = "fname">Fish Name</label><br>
+            <input list="fishes" id ="fish">
+            <datalist id="fishes">
+                <option  value="Alabama hog sucker " >
+                <option value="labama sturgeon">
+                <option value="Alaska whitefish">
+                <option value="Amazon molly">
+                <option value="Ameiurus">
+                <option value="Ameiurus platycephalus">   
+                <option value="American paddlefish " ></option>
+                <option value="Arctic cisco"></option>
+                <option value="Arctic grayling"></option>
+                <option value="Ashy darter"></option>
+                <option value="Banded sunfish"></option>
+                <option value="Bandfin shiner"></option>
+                <option value="Choctaw bass"></option>
+                <option value="Guadalupe bass"></option>
+                <option value="Largemouth bass"></option>
+                <option value="Ozark bass"></option>
+                <option value="Shadow bass"></option>
+                <option value="Smallmouth bass"></option>
+                <option value="Spotted bass"></option>
+                <option value="Beaded darter"></option>
+                <option value="Bigeye chub"></option>
+                <option value="Bigmouth chub"></option>
+                <option value="Black madtom"></option>
+                <option value="Blackside dace"></option>
+                <option value="Blackspot shiner"></option>
+                <option value="Blacktail redhorse"></option>
+                <option value="Blacktip shiner"></option>
+                <option value="Bleeding shiner"></option>
+                <option value="Blotched chub"></option>
+                <option value="Blue walleye"></option>
+                <option value="Bluegrass darter"></option>
+                <option value="Bluehead chub"></option>
+                <option value="Borax Lake chub"></option>
+                <option value="Brassy minnow"></option>
+                <option value="Bull chub"></option>
+                <option value="Black bullhead"></option>
+                <option value="Brown bullhead"></option>
+                <option value="Yellow bullhead"></option>
+                <option value="Bullhead minnow"></option>
+                <option value="Burbot"></option>
+                <option value="Burrhead chub"></option>
+                <option value="Burrhead shiner"></option>
+            </datalist> 
+            <label for = "fweight">Weight in Pounds</label><br>
+            <input type= "text" id="fweight" name="fweight"><br>
+            
+            <button id = "submit_button" type ="button" onclick="getInputValue();">Submit</button>
+            <canvas id ="imgCanvas" ></canvas>
+        </form>
+    </body>
+</html>
