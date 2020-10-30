@@ -43,7 +43,7 @@
                 //noCanvas();
                 //background(255,0,0);
                 input = createFileInput(handleFile);
-                input.position(0, 1150);
+                input.position(15, 1110);
             }
                 let firstclick = true;
                 var placeable = false;
@@ -231,10 +231,9 @@
                 <option value="Burrhead shiner"></option>
             </datalist> 
             <label for = "fweight">Weight in Pounds</label><br>
-            <input type= "text" id="fweight" name="fweight"><br>
-            
+            <input  style ="margin-bottom: 40px;" type= "text" id="fweight" name="fweight"><br>
             <button id = "submit_button" type ="button" onclick="getInputValue();">Submit</button>
-            <canvas id ="imgCanvas" ></canvas>
+        
         </form>
     </body>
 </html>
