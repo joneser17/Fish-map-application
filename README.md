@@ -6,7 +6,8 @@ Note: Application will still work without local host, it just wont save to the d
 Testing:
 For testing, I used node with index.js to create a server on port 3000. Navigate to http://localhost:3000/
 
-
+Example: 
+![Fishing map](https://i.gyazo.com/24aaa71ef3ad88f5b3fb181b4798bcd7.png)
 
 
 Working on:
