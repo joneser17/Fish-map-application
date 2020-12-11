@@ -93,13 +93,6 @@
                             lng1 = e.latlng.lng;
                             update(lat1,lng1);
 
-                            /*
-                            popup
-                                .setLatLng(e.latlng)
-                                .setContent( "Fish: " + inputVal + "<br>Weight: " + inputVal1 + "<br>You clicked the map at " + e.latlng.toString() + imagetest )
-                                .openOn(mymap);
-                            
-                            */
                             if(firstclick)
                             {
                                 marker = new L.marker(e.latlng);
@@ -140,6 +133,9 @@
             function confirm(){
                 if(placeable && lat1 != 0 && lng1 != 0 )
                 {
+                    var tempimage ="https://images-na.ssl-images-amazon.com/images/I/51eyndiu6YL._AC_SY355_.jpg";
+                    const timestamp = Date.now();
+                    var datemade = new Date(timestamp).toLocaleString();
                     const data = {lat1, lng1, inputVal, inputVal1, base64};
                             const options = {
                                 method: 'POST',
@@ -152,7 +148,14 @@
                                 console.log(response);
                             });
                         placeable = false;
-                        var tempmarker = L.marker([lat1,lng1]).addTo(mymap);
+
+                        //Places temp marker on map when confirming placement.
+                        if(base64 != "")
+                        {
+                            tempimage = base64;
+                        }
+                        var tempmarker = L.marker([lat1,lng1]).addTo(mymap)
+                            .bindPopup(inputVal + '<br>' + 'Weight:' + inputVal1 + '<br>' + datemade + '<img src ="' + tempimage +'" height = "300px" width = "300px"/>');
                 }
             }
             //Updates the placeable marker everytime the user clicks.
