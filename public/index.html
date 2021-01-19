@@ -76,7 +76,7 @@
                         else{
                             imagetest = '<img src ="https://images-na.ssl-images-amazon.com/images/I/51eyndiu6YL._AC_SY355_.jpg" height = "300px" width = "300px"/>';
                         }
-                        marker.bindPopup(`${item.inputVal}`+ "<br>" + "Weight: "+ `${item.inputVal1}` + "<br>" + datemade + imagetest);
+                        marker.bindPopup('<b>Species: </b>'+`${item.inputVal}`+ "<br>" + "<b>Weight: </b>"+ `${item.inputVal1}` + "<br><b>Date: </b>" + datemade + imagetest);
                         console.log(`${item.lat1}`); 
                     }
                     console.log(data);
@@ -155,7 +155,7 @@
                             tempimage = base64;
                         }
                         var tempmarker = L.marker([lat1,lng1]).addTo(mymap)
-                            .bindPopup(inputVal + '<br>' + 'Weight:' + inputVal1 + '<br>' + datemade + '<img src ="' + tempimage +'" height = "300px" width = "300px"/>');
+                            .bindPopup('<b>Species: </b>' +inputVal + '<br>' + '<b>Weight: </b>' + inputVal1 + ' pounds <br><b>Date: </b>' + datemade + '<img src ="' + tempimage +'" height = "300px" width = "300px"/>');
                 }
             }
             //Updates the placeable marker everytime the user clicks.
@@ -177,61 +177,61 @@
                 else
                 {
                     placeable = true;
-                    alert("Ready to place..... \n Fish: " + inputVal + " \nWeight: "+ inputVal1);
+                    alert("Ready to place..... \nFish: " + inputVal + " \nWeight: "+ inputVal1);
                 }
                 
             }
 
         
         </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  -->
             <h2>Add new entrys</h2>
         <form id ="main-form">
             <label for = "fname">Fish Name</label><br>
             <input list="fishes" id ="fish">
-            <datalist id="fishes">
+            <datalist id="fishes" >
                 <option  value="Alabama hog sucker " >
                 <option value="labama sturgeon">
                 <option value="Alaska whitefish">
                 <option value="Amazon molly">
                 <option value="Ameiurus">
                 <option value="Ameiurus platycephalus">   
-                <option value="American paddlefish " ></option>
-                <option value="Arctic cisco"></option>
-                <option value="Arctic grayling"></option>
-                <option value="Ashy darter"></option>
-                <option value="Banded sunfish"></option>
-                <option value="Bandfin shiner"></option>
-                <option value="Choctaw bass"></option>
-                <option value="Guadalupe bass"></option>
-                <option value="Largemouth bass"></option>
-                <option value="Ozark bass"></option>
-                <option value="Shadow bass"></option>
-                <option value="Smallmouth bass"></option>
-                <option value="Spotted bass"></option>
-                <option value="Beaded darter"></option>
-                <option value="Bigeye chub"></option>
-                <option value="Bigmouth chub"></option>
-                <option value="Black madtom"></option>
-                <option value="Blackside dace"></option>
-                <option value="Blackspot shiner"></option>
-                <option value="Blacktail redhorse"></option>
-                <option value="Blacktip shiner"></option>
-                <option value="Bleeding shiner"></option>
-                <option value="Blotched chub"></option>
-                <option value="Blue walleye"></option>
-                <option value="Bluegrass darter"></option>
-                <option value="Bluehead chub"></option>
-                <option value="Borax Lake chub"></option>
-                <option value="Brassy minnow"></option>
-                <option value="Bull chub"></option>
-                <option value="Black bullhead"></option>
-                <option value="Brown bullhead"></option>
-                <option value="Yellow bullhead"></option>
-                <option value="Bullhead minnow"></option>
-                <option value="Burbot"></option>
-                <option value="Burrhead chub"></option>
-                <option value="Burrhead shiner"></option>
+                <option value="American paddlefish " >
+                <option value="Arctic cisco">
+                <option value="Arctic grayling">
+                <option value="Ashy darter">
+                <option value="Banded sunfish">
+                <option value="Bandfin shiner">
+                <option value="Choctaw bass">
+                <option value="Guadalupe bass">
+                <option value="Largemouth bass">
+                <option value="Ozark bass">
+                <option value="Shadow bass">
+                <option value="Smallmouth bass">
+                <option value="Spotted bass">
+                <option value="Beaded darter">
+                <option value="Bigeye chub">
+                <option value="Bigmouth chub">
+                <option value="Black madtom">
+                <option value="Blackside dace">
+                <option value="Blackspot shiner">
+                <option value="Blacktail redhorse">
+                <option value="Blacktip shiner">
+                <option value="Bleeding shiner">
+                <option value="Blotched chub">
+                <option value="Blue walleye">
+                <option value="Bluegrass darter">
+                <option value="Bluehead chub">
+                <option value="Borax Lake chub">
+                <option value="Brassy minnow">
+                <option value="Bull chub">
+                <option value="Black bullhead">
+                <option value="Brown bullhead">
+                <option value="Yellow bullhead">
+                <option value="Bullhead minnow">
+                <option value="Burbot">
+                <option value="Burrhead chub">
+                <option value="Burrhead shiner">
             </datalist> 
             <label for = "fweight">Weight in Pounds</label><br>
             <input  style ="margin-bottom: 40px;" type= "text" id="fweight" name="fweight"><br>
